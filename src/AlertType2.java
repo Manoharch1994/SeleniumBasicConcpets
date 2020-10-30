@@ -6,7 +6,6 @@ public class AlertType2 {
 
 	public static void main(String[] args) throws InterruptedException {
 		System.setProperty("webdriver.chrome.driver","C:\\drivers\\chromedriver.exe");
-
 		WebDriver driver= new ChromeDriver();
 		driver.get("http://the-internet.herokuapp.com/javascript_alerts");
 		driver.findElement(By.xpath("//button[contains(text(),'Click for JS Prompt')]")).click();
